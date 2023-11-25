@@ -3,6 +3,7 @@ library(dplyr)
 library(tidytext)
 library(ggplot2)
 library(wordcloud)
+library(knitr)
 #check articles
 
 data <- readLines("C:/Thematic/slr3.txt")
