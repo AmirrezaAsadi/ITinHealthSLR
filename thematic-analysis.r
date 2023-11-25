@@ -39,4 +39,6 @@ table_data <- wordcounts %>%
 
 # Print the table using kable
 kable(table_data, caption = "Words and Their Number of Occurrences")
+write.csv(table_data, "table_data.csv", row.names = FALSE)
+
 
