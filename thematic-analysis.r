@@ -32,3 +32,11 @@ wordcounts %>%
   )
 wordcloud(wordcounts$word, freq = wordcounts$n, min.freq = 15)
 
+
+table_data <- wordcounts %>%
+  filter(n >= 100) %>%
+  arrange(desc(n))
+
+# Print the table using kable
+kable(table_data, caption = "Words and Their Number of Occurrences")
+
